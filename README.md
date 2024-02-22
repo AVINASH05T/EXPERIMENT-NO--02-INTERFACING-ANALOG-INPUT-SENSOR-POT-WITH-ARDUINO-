@@ -1,9 +1,11 @@
- INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
+## EXPERIMENT :2 
+ ## INTERFACING ANALOG INPUT SENSOR POT WITH ARDUINO
+## NAME :AVINASH T
+## ROLL NUMBER : 212223230026
+## DEPARTMENT : ARTIFICIAL INTELLIGENCE AND DATA SCIENCE
 
-
-
-
-**AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
+## AIM**: 
+To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
 
 **COMPONENTS REQUIRED:**
@@ -67,7 +69,39 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+```c
+int led=4;
+int sensorpot;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop()
+{
+  sensorpot=analogRead(A0);
+  Serial.print("data=");
+  Serial.println(sensorpot);
+  delay(500);
+  if(sensorpot>500)
+  {
+    digitalWrite(led,HIGH);
+      delay(100);
+    digitalWrite(led,LOW);
+      delay(100); 
+  } 
+  else
+  {
+    digitalWrite(led,LOW);
+       delay(100);
+  } 
+}
+
+```
+
+![image](https://github.com/AVINASH05T/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151514286/a30597d5-ea00-480b-b001-15d8a9d8f9f8)
 
 
 
@@ -80,6 +114,10 @@ CIRCUIT DIAGRAM
 **
 **Simulation output:** 
 **
+![image](https://github.com/AVINASH05T/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151514286/e9f12509-9e41-4903-a690-28c2f120da2a)
+
+
+![image](https://github.com/AVINASH05T/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151514286/f2dda279-73d5-444a-871c-545bc9657007)
 
 
 [My image](username.github.com/repository/img/image.jpg)
