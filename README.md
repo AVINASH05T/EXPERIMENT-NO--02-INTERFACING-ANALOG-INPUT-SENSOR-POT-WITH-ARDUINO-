@@ -68,7 +68,7 @@ CIRCUIT DIAGRAM
 
 
 
-**PROGRAM** 
+## PROGRAM:
 ```c
 int led=4;
 int sensorpot;
@@ -128,4 +128,5 @@ void loop()
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+## RESULT: 
+Arduino uno analog input functioning is learned and interfaced with digital input switch .
